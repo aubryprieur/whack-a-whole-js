@@ -53,8 +53,10 @@ document.addEventListener('DOMContentLoaded', () => {
   ]
 
   const grid = document.querySelector('.grid')
+  const resultDisplay = document.querySelector('#result')
   var cardsChosen = []
   var cardsChosenId = []
+  var cardsWon = []
 
   //Create the board
   function createBoard() {
@@ -68,7 +70,27 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
  //Check for matches
-
+function checkForMatch() {
+  var cards = document.querySelectorAll('img')
+  const optionOneId = cardsChosenId[0]
+  const optionTwoId = cardsChosenId[1]
+  if (cardsChosen[0] === cardsChosenId[1]) {
+    alert('You found a match')
+    cards[optionOneId].setAttribute('src', 'images/b_w.png')
+    cards[optionTwoId].setAttribute('src', 'images/b_w.png')
+    cardsWon.push(cardsChosen)
+  } else {
+    cards[optionOneId].setAttribute('src', 'images/rainbow.png')
+    cards[optionTwoId].setAttribute('src', 'images/rainbow.png')
+    alert('Sorry, try again')
+  }
+  cardsChosen = []
+  cardsChosenId = []
+  resultDisplay.textContent = cardsWon.length
+  if (cardsWon.length === cardArray.length/2) {
+    resultDisplay.textContent = 'Congratulations! You found them all!'
+  }
+}
 
 
 

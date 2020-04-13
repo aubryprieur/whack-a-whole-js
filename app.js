@@ -4,27 +4,27 @@ document.addEventListener('DOMContentLoaded', () => {
   const cardArray = [
     {
       name: "cat",
-      img: "images/cat.jpg"
+      img: "images/cat.JPG"
     },
     {
       name: "cat",
-      img: "images/cat.jpg"
+      img: "images/cat.JPG"
     },
     {
       name: "diddley",
-      img: "images/diddley.jpg"
+      img: "images/diddley.JPG"
     },
     {
       name: "diddley",
-      img: "images/diddley.jpg"
+      img: "images/diddley.JPG"
     },
     {
       name: "homer",
-      img: "images/homer.jpg"
+      img: "images/homer.JPG"
     },
     {
       name: "homer",
-      img: "images/homer.jpg"
+      img: "images/homer.JPG"
     },
     {
       name: "lanfeust",
@@ -36,19 +36,19 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     {
       name: "rtf",
-      img: "images/rtf.jpg"
+      img: "images/rtf.JPG"
     },
     {
       name: "rtf",
-      img: "images/rtf.jpg"
+      img: "images/rtf.JPG"
     },
     {
       name: "samurai",
-      img: "images/samurai.jpg"
+      img: "images/samurai.JPG"
     },
     {
       name: "samurai",
-      img: "images/samurai.jpg"
+      img: "images/samurai.JPG"
     }
   ]
 

@@ -12,4 +12,9 @@ img {
 .center {
   margin: auto;
   text-align: center;
+  margin-top: 20px;
+}
+
+.refresh-btn {
+    margin-top: 50px;
 }

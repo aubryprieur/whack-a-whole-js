@@ -3,52 +3,52 @@ document.addEventListener('DOMContentLoaded', () => {
   //card options
   const cardArray = [
     {
-      name: "cat",
-      img: "images/cat.JPG"
+      name: "scala",
+      img: "images/scala.png"
     },
     {
-      name: "cat",
-      img: "images/cat.JPG"
+      name: "scala",
+      img: "images/scala.png"
     },
     {
-      name: "diddley",
-      img: "images/diddley.JPG"
+      name: "ruby",
+      img: "images/ruby.png"
     },
     {
-      name: "diddley",
-      img: "images/diddley.JPG"
+      name: "ruby",
+      img: "images/ruby.png"
     },
     {
-      name: "homer",
-      img: "images/homer.JPG"
+      name: "python",
+      img: "images/python.png"
     },
     {
-      name: "homer",
-      img: "images/homer.JPG"
+      name: "python",
+      img: "images/python.png"
     },
     {
-      name: "lanfeust",
-      img: "images/lanfeust.png"
+      name: "php",
+      img: "images/php.png"
     },
     {
-      name: "lanfeust",
-      img: "images/lanfeust.png"
+      name: "php",
+      img: "images/php.png"
     },
     {
-      name: "rtf",
-      img: "images/rtf.JPG"
+      name: "js",
+      img: "images/js.png"
     },
     {
-      name: "rtf",
-      img: "images/rtf.JPG"
+      name: "js",
+      img: "images/js.png"
     },
     {
-      name: "samurai",
-      img: "images/samurai.JPG"
+      name: "go",
+      img: "images/go.png"
     },
     {
-      name: "samurai",
-      img: "images/samurai.JPG"
+      name: "go",
+      img: "images/go.png"
     }
   ]
 
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function createBoard() {
     for (let i = 0; i < cardArray.length; i++) {
       var card = document.createElement('img')
-      card.setAttribute('src', 'images/rainbow.png')
+      card.setAttribute('src', 'images/inter.png')
       card.setAttribute('data-id', i)
       card.addEventListener('click', flipCard)
       grid.appendChild(card)
@@ -78,19 +78,19 @@ function checkForMatch() {
   const optionTwoId = cardsChosenId[1]
   if (cardsChosen[0] === cardsChosen[1]) {
     alert('You found a match')
-    cards[optionOneId].setAttribute('src', 'images/b_w.png')
-    cards[optionTwoId].setAttribute('src', 'images/b_w.png')
+    cards[optionOneId].setAttribute('src', 'images/github.png')
+    cards[optionTwoId].setAttribute('src', 'images/github.png')
     cardsWon.push(cardsChosen)
   } else {
-    cards[optionOneId].setAttribute('src', 'images/rainbow.png')
-    cards[optionTwoId].setAttribute('src', 'images/rainbow.png')
+    cards[optionOneId].setAttribute('src', 'images/inter.png')
+    cards[optionTwoId].setAttribute('src', 'images/inter.png')
     alert('Sorry, try again')
   }
   cardsChosen = []
   cardsChosenId = []
   resultDisplay.textContent = cardsWon.length
   if (cardsWon.length === cardArray.length/2) {
-    resultDisplay.textContent = 'Congratulations! You found them all!'
+    resultDisplay.textContent = ' Congratulations! You found them all!'
   }
 }
 

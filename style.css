@@ -1,20 +1,19 @@
+.square {
+  width: 200px;
+  height: 200px;
+  border-style: solid;
+  border-color: black;
+}
+
 .grid {
   display: flex;
-  flex-wrap: wrap;
-  height: 310px;
-  width: 410px;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 618px;
+  height: 618px;
 }
 
-img {
-  border: 0.5px solid grey;
-}
-
-.center {
-  margin: auto;
-  text-align: center;
-  margin-top: 20px;
-}
-
-.refresh-btn {
-    margin-top: 50px;
+.mole {
+  background-image: url('frog.jpeg');
+  background-size: cover;
 }
